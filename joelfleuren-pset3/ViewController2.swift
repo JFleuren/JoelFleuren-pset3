@@ -63,7 +63,11 @@ class ViewController2: UIViewController {
         }
     }
     @IBAction func buttonClicked(button: UIButton){
-        UserD
+        let defaults = UserDefaults.standard
+        defaults.set(name.text, forKey: "title")
+        defaults.set(cast.text, forKey: "cast")
+        defaults.set(plot.text, forKey: "plot")
+        defaults.set(poster.image, forKey: "image")
     }
     // MARK: - Navigation
 
