@@ -15,6 +15,8 @@
 		1F83F0F01DD9E20D00A40B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F83F0EF1DD9E20D00A40B59 /* Assets.xcassets */; };
 		1F83F0F31DD9E20D00A40B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F83F0F11DD9E20D00A40B59 /* LaunchScreen.storyboard */; };
 		1F83F0FB1DD9E29E00A40B59 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83F0FA1DD9E29E00A40B59 /* ViewController2.swift */; };
+		1FAEBF2A1DDF97C100356E50 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAEBF291DDF97C100356E50 /* ViewController3.swift */; };
+		1FAEBF2C1DDFB0C400356E50 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1FAEBF2B1DDFB0C400356E50 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1F83F0F21DD9E20D00A40B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F83F0F41DD9E20D00A40B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F83F0FA1DD9E29E00A40B59 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		1FAEBF291DDF97C100356E50 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		1FAEBF2B1DDFB0C400356E50 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,15 @@
 			children = (
 				1F83F0E81DD9E20D00A40B59 /* AppDelegate.swift */,
 				1F83F0EA1DD9E20D00A40B59 /* ViewController.swift */,
-				1F4B5ADD1DDB3C3D000E4A47 /* Movie.swift */,
 				1F83F0FA1DD9E29E00A40B59 /* ViewController2.swift */,
+				1FAEBF291DDF97C100356E50 /* ViewController3.swift */,
+				1F4B5ADD1DDB3C3D000E4A47 /* Movie.swift */,
 				1F83F0EC1DD9E20D00A40B59 /* Main.storyboard */,
 				1F83F0EF1DD9E20D00A40B59 /* Assets.xcassets */,
 				1F83F0F11DD9E20D00A40B59 /* LaunchScreen.storyboard */,
 				1F83F0F41DD9E20D00A40B59 /* Info.plist */,
 				1F4B5ADF1DDC6A09000E4A47 /* MovieTableViewCell.swift */,
+				1FAEBF2B1DDFB0C400356E50 /* README.md */,
 			);
 			path = "joelfleuren-pset3";
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			files = (
 				1F83F0EB1DD9E20D00A40B59 /* ViewController.swift in Sources */,
 				1F83F0E91DD9E20D00A40B59 /* AppDelegate.swift in Sources */,
+				1FAEBF2A1DDF97C100356E50 /* ViewController3.swift in Sources */,
+				1FAEBF2C1DDFB0C400356E50 /* README.md in Sources */,
 				1F4B5ADE1DDB3C3D000E4A47 /* Movie.swift in Sources */,
 				1F4B5AE01DDC6A09000E4A47 /* MovieTableViewCell.swift in Sources */,
 				1F83F0FB1DD9E29E00A40B59 /* ViewController2.swift in Sources */,

@@ -45,29 +45,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "VCSegue2", sender: movies[indexPath.row])
     }
     
-
+    // make a function to get the data from the URL
     func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
         URLSession.shared.dataTask(with: url ) {
             (data, response, error) in
             completion(data, response, error)
             }.resume()
     }
-    func downloadImage(url: URL) {
-        getDataFromUrl(url: url) {
-            (data, response, error)  in
-                guard let data = data, error == nil else { return }
-                DispatchQueue.main.async() { () -> Void in
-            }
-        }
-    }
+    
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         let searchbarText = searchBar.text!
+        // make shore it works for a white space
         let queryString = searchbarText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        
+        // set the url string
         let urlString = String(format: "https://www.omdbapi.com/?t=%@&y=&plot=short&r=json", queryString!)
-        
+        // get the data from the url
+        // check for errors
         getDataFromUrl(url: NSURL(string: urlString) as! URL) {
             (data, response, error) in
             guard let data = data, error == nil else { return }
@@ -75,6 +70,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             do
             {
                 var movie = Movie()
+                // set the information from the URL in the movie file
                 if let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                     movie.Title = dict["Title"] as! String
                     movie.Year = dict["Year"] as! String
@@ -83,7 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     movie.Plot = dict["Plot"] as! String
                     movie.Poster = dict["Poster"] as! String
                 }
-                
+            
                 self.movies.append(movie)
                 
                 DispatchQueue.main.async {
@@ -95,7 +91,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
-    
+    // send the information to an other viewcontroller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "VCSegue2" {
             let desination = segue.destination as! ViewController2
