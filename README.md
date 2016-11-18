@@ -1,9 +1,7 @@
 Joël Fleuren
 
 je kan naar een film search en er dan op klikken om meer info over de film te krijgen.
-Het is me alleen niet gelukt om een watchlist te creeren met NSdefaults
-
-
+Het is me alleen niet gelukt om een watchlist te creeren met NSdefaults en the tableview in landscape mode goed te krijgen
 
 The screenshots
 ![alt text](doc/1.png)
