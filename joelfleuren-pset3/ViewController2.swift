@@ -9,9 +9,25 @@
 import UIKit
 
 class ViewController2: UIViewController {
+    
+    var movie: Movie!
 
+    @IBOutlet weak var poster: UIImageView!
+   
+    @IBOutlet weak var name: UITextView!
+    @IBOutlet weak var year: UITextView!
+    @IBOutlet weak var director: UITextView!
+    @IBOutlet weak var cast: UITextView!
+    @IBOutlet weak var plot: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        poster.image = (movie.Image)
+        name.text = (movie.Title)
+        year.text = (movie.Year)
+        director.text = (movie.Director)
+        cast.text = (movie.Actors)
+        plot.text = (movie.Plot)
 
         // Do any additional setup after loading the view.
     }

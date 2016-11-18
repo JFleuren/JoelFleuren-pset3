@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class movies{
+class Movie{
+    
     var Title = ""
     var Image = ""
     var Rating = ""
@@ -15,4 +16,5 @@ class movies{
     var Director = ""
     var Actors = ""
     var Plot = ""
+    var Poster = ""
 }
